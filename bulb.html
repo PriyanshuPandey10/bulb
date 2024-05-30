@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <div id="bulb">
+        
+    </div>
+    <button>ON</button>
+    <script>
+        var a = document.querySelector("#bulb");
+        var b = document.querySelector("button");
+        b.addEventListener("click", function(){
+            if(a.style.backgroundColor == "yellow"){
+                a.style.backgroundColor = "black";
+                b.innerHTML = "ON";
+            }else{
+                a.style.backgroundColor = "yellow";
+                b.innerHTML = "OFF";
+            }
+        });
+    </script>
+
+</body>
+</html>
